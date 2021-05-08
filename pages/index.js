@@ -15,7 +15,7 @@ export default function Index({ allPosts }) {
     <>
       <Layout>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>Fikri Ghazi</title>
         </Head>
         <Container>
           <Intro />
@@ -23,6 +23,12 @@ export default function Index({ allPosts }) {
             I'm a software engineer. I live in Portsmouth, NH and currently
             working full-time on Chime—a servicedesk software, at Instant
             Technologies.
+          </p>
+          <br />
+          <p>
+            Please reach me from my email
+            <a href="mailto:fikri@mghazi.com">fikri@mghazi.com</a> if you'd like
+            to chat.
           </p>
           <Links />
           {/* {heroPost && (
