@@ -26,10 +26,11 @@ export default function Index({ allPosts }) {
           </p>
           <br />
           <p>
-            Please reach me from my email
+            Please reach me at{" "}
             <a href="mailto:fikri@mghazi.com">fikri@mghazi.com</a> if you'd like
-            to chat.
+            to chat. Thank you.
           </p>
+
           <Links />
           {/* {heroPost && (
             <HeroPost
