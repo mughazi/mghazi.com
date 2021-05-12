@@ -20,9 +20,7 @@ export default function Index({ allPosts }) {
         <Container>
           <Intro />
           <p>
-            I'm a software engineer. I live in Portsmouth, NH and currently
-            working full-time on Chime—a servicedesk software, at Instant
-            Technologies.
+            Software engineer based in Portsmouth, NH.
           </p>
           <br />
           <p>
