@@ -20,7 +20,7 @@ export default function Index({ allPosts }) {
         <Container>
           <Intro />
           <p>
-            Software engineer based in Portsmouth, NH.
+            Programmer based in Portsmouth, NH.
           </p>
           <br />
           <p>
