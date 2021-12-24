@@ -4,7 +4,7 @@ export default function Links() {
     {
       label: "Twitter",
       username: "fkghz",
-      url: "https://twitter.com/fkghz",
+      url: "https://twitter.com/ghz________",
     },
   ];
   return (
