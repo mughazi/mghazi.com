@@ -3,8 +3,8 @@ export default function Links() {
     { label: "GitHub", username: "f7g", url: "https://github.com/f7g" },
     {
       label: "Twitter",
-      username: "fkghz",
-      url: "https://twitter.com/ghz________",
+      username: "fikrigha",
+      url: "https://twitter.com/fikrigha",
     },
   ];
   return (
