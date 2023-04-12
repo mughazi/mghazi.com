@@ -1,6 +1,6 @@
 export default function Links() {
   const links = [
-    { label: "GitHub", username: "f7g", url: "https://github.com/f7g" },
+    { label: "GitHub", username: "fikrigha", url: "https://github.com/fikrigha" },
     {
       label: "Twitter",
       username: "fikrigha",
@@ -8,7 +8,7 @@ export default function Links() {
     },
   ];
   return (
-    <div className="mb-20 mt-8">
+    <div className="mt-8 mb-20">
       <nav>
         {links.map((link) => (
           <div key={link.url} className="flex justify-between w-48 ">
