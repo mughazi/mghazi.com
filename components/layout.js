@@ -1,13 +1,10 @@
-import Footer from "../components/footer";
 import Meta from "../components/meta";
 
 export default function Layout({ preview, children }) {
   return (
-    <div className="bg-gray-200 text-gray-800 h-screen">
+    <div className="h-screen text-gray-800 ">
       <Meta />
-      <div className="pt-16">
-        <main>{children}</main>
-      </div>
+      <main className="py-12">{children}</main>
       {/* <Footer /> */}
     </div>
   );

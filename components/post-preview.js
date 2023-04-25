@@ -1,37 +1,27 @@
-import Avatar from '../components/avatar'
-import DateFormatter from '../components/date-formatter'
-import CoverImage from './cover-image'
-import Link from 'next/link'
+import Link from "next/link";
+import Image from "next/image";
 
-export default function PostPreview({
-  title,
-  coverImage,
-  date,
-  excerpt,
-  author,
-  slug,
-}) {
+export default function PostPreview({ title, coverImage, excerpt, slug }) {
   return (
-    <div>
-      <div className="mb-5">
-        <CoverImage
-          slug={slug}
-          title={title}
-          src={coverImage}
-          height={278}
-          width={556}
-        />
-      </div>
-      <h3 className="text-3xl mb-3 leading-snug">
+    <div className="grid grid-cols-12 py-6 space-y-2 border-t md:space-x-4 md:space-y-0">
+      <div className="col-span-12 md:col-span-5">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <a className="hover:underline">{title}</a>
+          <Image
+            src={coverImage}
+            alt={`Cover Image for ${title}`}
+            width={800}
+            height={800}
+          />
         </Link>
-      </h3>
-      <div className="text-lg mb-4">
-        <DateFormatter dateString={date} />
       </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      <Avatar name={author.name} picture={author.picture} />
+      <div className="col-span-12 md:col-span-7">
+        <h3 className="text-blue-600 underline hover:text-blue-600">
+          <Link as={`/posts/${slug}`} href="/posts/[slug]">
+            <span className="hover:underline">{title}</span>
+          </Link>
+        </h3>
+        <p className="h-24 text-clip">{excerpt}</p>
+      </div>
     </div>
-  )
+  );
 }

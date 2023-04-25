@@ -13,3 +13,15 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+@layer base {
+    body {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    a {
+        @apply text-blue-600 underline hover:text-blue-700;
+    }
+    ol {
+        list-style-type: decimal;
+        list-style-position: inside;
+    }
+}
