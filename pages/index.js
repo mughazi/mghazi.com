@@ -16,14 +16,13 @@ export default function Index({ allPosts }) {
         <Container>
           <Header />
           <article className="py-6 space-y-6">
-            <p>Hi,</p>
             <p>
-              My name is Fikri Ghazi. I'm a Programmer based in Portsmouth, NH.
-              I have been working as a software developer since 2017. I like
-              using TypeScript, React and Python (and some C#.)
+              Hi there—my name is Fikri, I'm a programmer from Portsmouth, NH.
             </p>
-            <p>Please feel welcome to reach out if you'd like to chat.</p>
-            <p>Thank you.</p>
+            <p>
+              Please feel free to reach out if you'd like to chat. My dm and
+              email inbox is always open.
+            </p>
           </article>
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
