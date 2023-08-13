@@ -20,8 +20,8 @@ export default function Index({ allPosts }) {
               Hi there—my name is Fikri, I'm a programmer from Portsmouth, NH.
             </p>
             <p>
-              Please feel free to reach out if you'd like to chat. My dm and
-              email inbox is always open.
+              Please feel free to reach out if you'd like to chat. My email
+              inbox is always open.
             </p>
           </article>
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
