@@ -1,5 +1,6 @@
 import Container from "../components/container";
 import MoreStories from "../components/more-stories";
+import Header from "../components/header";
 import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
 import Head from "next/head";
@@ -13,30 +14,41 @@ export default function Index({ allPosts }) {
         <Head>
           <title>Fikri Ghazi</title>
         </Head>
-        <div style={{ maxWidth: 780 }}>
-          <header>
-            <h1 style={{ fontSize: "1rem" }}>
-              <Link href={"/"}>Fikri Ghazi</Link>
-            </h1>
-            <nav style={{ display: "flex", gap: 12 }}>
-              <a href="mailto:fikri@mghazi.com">Email</a>
-              <a href="https://github.com/fikrigha" target="_blank">
-                GitHub
-              </a>
-              <a href="https://twitter.com/fikrigha" target="_blank">
-                Twitter
-              </a>
-            </nav>
-          </header>
-          <br />
+        <Container>
+          <Header />
+          <hr />
           <main>
             <p>
-              Hi, I'm Fikri. I'm a programmer from Portsmouth, New Hampshire.
+              Hi, I'm Fikri. I'm a programmer based in Portsmouth, NH, with a
+              focus on JavaScript and Python.
             </p>
-            <p>If you want to chat, please feel free to reach out.</p>
+
+            <p>What I'm learning:</p>
+            <ul>
+              <li>
+                Supervised Machine Learning: Regression and Classification
+              </li>
+            </ul>
+
+            <p>My personal projects:</p>
+            <ul>
+              <li>
+                ChatGPT Desktop App (status: releasing early November)
+                <ul>
+                  <li>
+                    To do:
+                    <ul>
+                      <li>Settings UI</li>
+                      <li>Onboarding UI</li>
+                      <li>Landing page website</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </main>
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </div>
+        </Container>
       </Layout>
     </>
   );
