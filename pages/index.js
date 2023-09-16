@@ -23,14 +23,14 @@ export default function Index({ allPosts }) {
               focus on JavaScript and Python.
             </p>
 
-            <p>What I'm learning:</p>
+            <p>I'm currently learning</p>
             <ul>
               <li>
                 Supervised Machine Learning: Regression and Classification
               </li>
             </ul>
 
-            <p>My personal projects:</p>
+            <p>And here are some of my personal projects</p>
             <ul>
               <li>
                 ChatGPT Desktop App (status: releasing early November)
