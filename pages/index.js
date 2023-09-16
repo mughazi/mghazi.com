@@ -3,7 +3,7 @@ import MoreStories from "../components/more-stories";
 import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
 import Head from "next/head";
-import Header from "../components/header";
+import Link from "next/link";
 
 export default function Index({ allPosts }) {
   const morePosts = allPosts.slice();
@@ -13,19 +13,30 @@ export default function Index({ allPosts }) {
         <Head>
           <title>Fikri Ghazi</title>
         </Head>
-        <Container>
-          <Header />
-          <article className="py-6 space-y-6">
+        <div style={{ maxWidth: 780 }}>
+          <header>
+            <h1 style={{ fontSize: "1rem" }}>
+              <Link href={"/"}>Fikri Ghazi</Link>
+            </h1>
+            <nav style={{ display: "flex", gap: 12 }}>
+              <a href="mailto:fikri@mghazi.com">Email</a>
+              <a href="https://github.com/fikrigha" target="_blank">
+                GitHub
+              </a>
+              <a href="https://twitter.com/fikrigha" target="_blank">
+                Twitter
+              </a>
+            </nav>
+          </header>
+          <br />
+          <main>
             <p>
-              Hi there—my name is Fikri, I'm a programmer from Portsmouth, NH.
+              Hi, I'm Fikri. I'm a programmer from Portsmouth, New Hampshire.
             </p>
-            <p>
-              Please feel free to reach out if you'd like to chat. My email
-              inbox is always open.
-            </p>
-          </article>
+            <p>If you want to chat, please feel free to reach out.</p>
+          </main>
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </Container>
+        </div>
       </Layout>
     </>
   );
