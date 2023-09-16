@@ -1,3 +1,3 @@
 export default function Container({ children }) {
-  return <div className="container max-w-2xl px-5 mx-auto">{children}</div>;
+  return <div style={{ maxWidth: 780 }}>{children}</div>;
 }
