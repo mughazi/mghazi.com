@@ -7,7 +7,7 @@ author:
   name: Fikri Ghazi
 ogImage:
   url: "/assets/blog/nextjs-github-pages/cover.png"
-published: false
+published: true
 ---
 
 Sample

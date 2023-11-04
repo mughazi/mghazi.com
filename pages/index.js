@@ -8,6 +8,7 @@ import Link from "next/link";
 
 export default function Index({ allPosts }) {
   const morePosts = allPosts.slice();
+
   return (
     <>
       <Layout>
@@ -18,10 +19,7 @@ export default function Index({ allPosts }) {
           <Header />
           <hr />
           <main>
-            <p>
-              Hi, I'm Fikri. I'm a programmer based in Portsmouth, NH, with a
-              focus on JavaScript and Python.
-            </p>
+            <p>Hi, I'm Fikri. I'm a programmer from Portsmouth, NH.</p>
 
             <p>I'm currently learning</p>
             <ul>
@@ -30,7 +28,7 @@ export default function Index({ allPosts }) {
               </li>
             </ul>
 
-            <p>And here are some of my personal projects</p>
+            <p>and working on some side projects</p>
             <ul>
               <li>
                 ChatGPT Desktop App (status: releasing early November)
@@ -47,7 +45,7 @@ export default function Index({ allPosts }) {
               </li>
             </ul>
           </main>
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
         </Container>
       </Layout>
     </>
