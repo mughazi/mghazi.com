@@ -24,22 +24,51 @@ export default function Index({ allPosts }) {
             <p>I'm currently learning</p>
             <ul>
               <li>
-                Supervised Machine Learning: Regression and Classification
+                <h4>
+                  Supervised Machine Learning: Regression and Classification
+                </h4>
               </li>
             </ul>
 
             <p>and working on some side projects</p>
             <ul>
               <li>
-                ChatGPT Desktop App (status: releasing early November)
+                <h4>ChatGPT Desktop App</h4>
                 <ul>
                   <li>
                     To do:
                     <ul>
-                      <li>Settings UI</li>
-                      <li>Onboarding UI</li>
+                      <li>Branding</li>
                       <li>Landing page website</li>
+                      <li>Testing</li>
                     </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h4>YouTube: Code with me</h4>
+                <ul style={{ display: "flex", overflow: "scroll", gap: 32 }}>
+                  <li>
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/kbYD2EDap3s?si=vTaAihdeADID3O_J"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
+                  </li>
+                  <li>
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/mRjr8Kv0owU?si=DJKuWNZ2iu2ja6Qr"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
                   </li>
                 </ul>
               </li>

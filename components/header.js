@@ -14,6 +14,9 @@ export default function Header() {
         <a href="https://twitter.com/fikrigha" target="_blank">
           Twitter
         </a>
+        <a href="https://youtube.com/@fikrigha" target="_blank">
+          YouTube
+        </a>
       </nav>
     </header>
   );
