@@ -18,22 +18,30 @@ export default function Index({ allPosts }) {
         <Container>
           <Header />
           <hr />
+          <br />
           <main>
-            <p>Hi, I'm Fikri. I'm a programmer from Portsmouth, NH.</p>
+            <p>Hi, I'm Fikri from Portsmouth, NH.</p>
 
-            <p>I'm currently learning</p>
+            <br />
+
+            <p>I'm a programmer learning about</p>
             <ul>
               <li>
-                <h4>
+                <strong>
                   Supervised Machine Learning: Regression and Classification
-                </h4>
+                </strong>
+              </li>
+              <li>
+                and <strong>Business Administration</strong>
               </li>
             </ul>
 
-            <p>and working on some side projects</p>
+            <br />
+
+            <p>Right now I'm working on a couple of exiting side projects</p>
             <ul>
               <li>
-                <h4>ChatGPT Desktop App</h4>
+                <h4>ChatGPT desktop client template</h4>
                 <ul>
                   <li>
                     To do:
