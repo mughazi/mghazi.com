@@ -47,16 +47,22 @@ export default function Index({ allPosts }) {
               </li>
               <li>
                 <h4>YouTube: Code with me</h4>
-                <ul style={{ display: "flex", overflow: "scroll", gap: 32 }}>
+                <ul
+                  style={{
+                    display: "flex",
+                    overflow: "auto",
+                    gap: 32,
+                    maxWidth: "75vw",
+                  }}
+                >
                   <li>
                     <iframe
                       width="560"
                       height="315"
                       src="https://www.youtube.com/embed/kbYD2EDap3s?si=vTaAihdeADID3O_J"
                       title="YouTube video player"
-                      frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
+                      allowFullScreen
                     ></iframe>
                   </li>
                   <li>
@@ -65,9 +71,8 @@ export default function Index({ allPosts }) {
                       height="315"
                       src="https://www.youtube.com/embed/mRjr8Kv0owU?si=DJKuWNZ2iu2ja6Qr"
                       title="YouTube video player"
-                      frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
+                      allowFullScreen
                     ></iframe>
                   </li>
                 </ul>
