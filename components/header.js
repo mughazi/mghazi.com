@@ -1,11 +1,7 @@
-import Link from "next/link";
-
 export default function Header() {
   return (
     <header>
-      <h1 style={{ fontSize: "1rem" }}>
-        <Link href={"/"}>Fikri Ghazi</Link>
-      </h1>
+      <h1 style={{ fontSize: "1em" }}>Fikri Ghazi</h1>
       <nav style={{ display: "flex", gap: 12 }}>
         <a href="mailto:fikri@mghazi.com">Email</a>
         <a href="https://github.com/fikrigha" target="_blank">
