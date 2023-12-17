@@ -14,22 +14,20 @@
         padding: 1em;
       }
 
-      @keyframes slideFadeIn {
+      @keyframes fadeIn {
         from {
           opacity: 0;
-          transform: translateY(-20px);
         }
         to {
           opacity: 1;
-          transform: translateY(0);
         }
       }
-
       .container {
         max-width: 480px;
-        animation-name: slideFadeIn;
-        animation-duration: 0.5s;
-        animation-timing-function: ease-out;
+
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
         animation-fill-mode: forwards;
       }
 
