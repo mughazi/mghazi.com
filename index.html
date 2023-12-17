@@ -35,11 +35,30 @@
         font-size: 1em;
       }
 
+      nav {
+        display: flex;
+        gap: 1.2em;
+      }
+
+      @keyframes backgroundFadeIn {
+        from {
+          color: gray;
+        }
+        to {
+          color: black; /* Change to your desired hover color */
+        }
+      }
       nav a {
         display: inline-block;
         position: relative;
         overflow: hidden;
-        color: black;
+        color: gray;
+        transition: background-color 0.3s;
+      }
+      nav a:hover {
+        animation-name: backgroundFadeIn;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards; /* Keep the end state after the animation */
       }
 
       main {
@@ -55,7 +74,7 @@
     <div class="container">
       <header>
         <h1>Fikri Ghazi</h1>
-        <nav class="menu" style="display: flex; gap: 12px">
+        <nav>
           <a href="mailto:fikri@mghazi.com">Email</a>
           <a href="https://www.linkedin.com/in/fikrigha/" target="_blank">
             LinkedIn
