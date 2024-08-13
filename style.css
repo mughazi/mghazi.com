@@ -1,0 +1,43 @@
+body {
+  max-width: 480px;
+  margin: 0 auto;
+  color: rgb(56, 56, 56);
+  padding: 24px 0;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  color: rgb(56, 56, 56);
+  text-decoration: none;
+  font-style: italic;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    font-size: 1em;
+    font-weight: 400;
+  }
+  nav {
+    display: flex;
+    gap: 1.2em;
+  }
+}
+
+pre {
+  background-color: #333333;
+  color: #d4d4d4;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 1px solid #333;
+}
