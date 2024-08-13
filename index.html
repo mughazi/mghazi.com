@@ -5,71 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fikri Ghazi</title>
     <style>
-      body {
-        font-family: monospace;
-        line-height: 1.6em;
-
-        display: flex;
-        justify-content: center;
-        padding: 1em;
-      }
-
       .container {
         max-width: 480px;
-        animation-name: fadeIn;
-        animation-duration: 1s;
-        animation-timing-function: ease-in;
-        animation-fill-mode: forwards;
+        margin: 0 auto;
       }
 
       header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-      }
-      header h1 {
-        font-size: 1em;
-      }
 
-      nav {
-        display: flex;
-        gap: 1.2em;
-      }
-
-      nav a {
-        display: inline-block;
-        position: relative;
-        overflow: hidden;
-        color: gray;
-        transition: background-color 0.3s;
-      }
-      nav a:hover {
-        animation-name: backgroundFadeIn;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards; /* Keep the end state after the animation */
-      }
-
-      main {
-        display: flex;
-        flex-direction: column;
-        gap: 0.2em;
-        padding-top: 2em;
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
+        h1 {
+          font-size: 1em;
         }
-        to {
-          opacity: 1;
-        }
-      }
-      @keyframes backgroundFadeIn {
-        from {
-          color: gray;
-        }
-        to {
-          color: black; /* Change to your desired hover color */
+
+        nav {
+          display: flex;
+          gap: 1.2em;
+
+          a {
+            display: inline-block;
+            position: relative;
+            color: gray;
+          }
         }
       }
     </style>
@@ -98,62 +56,46 @@
       <main>
         <div id="typingEffect"></div>
 
-        <div>
-          <small>Portsmouth, NH</small>
-        </div>
-
         <p>
-          Generalist at Instant Technologies (working on branding, marketing,
-          and web development.) I love programming. I program outside of work as
-          a hobby.
+          I program outside of work (at Instant Technoliges) as a hobby. Please
+          check out my projects below.
         </p>
 
-        <div>
-          <p>Currently learning:</p>
-          <ol>
-            <li>
-              <strong>Supervised Machine Learning</strong>
-            </li>
-            <li>
-              <strong>Introduction to Financial Accounting</strong>
-            </li>
-          </ol>
-        </div>
+        <p>
+          Please feel free to email me at fikri@mghazi.com for any questions.
+        </p>
 
-        <div>
-          <p>Side projects:</p>
-          <ol>
-            <li>
-              <strong>
-                <a href="https://www.radiumui.com">RadimUI</a>
-                <span>- A hackable ChatGPT desktop app</span>
-              </strong>
-            </li>
-            <li>
-              <strong>YouTube - Code with me</strong>
-              <ul>
-                <li>
-                  <iframe
-                    width="100%"
-                    src="https://www.youtube.com/embed/kbYD2EDap3s?si=vTaAihdeADID3O_J"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen=""
-                  ></iframe>
-                </li>
-                <li>
-                  <iframe
-                    width="100%"
-                    src="https://www.youtube.com/embed/mRjr8Kv0owU?si=DJKuWNZ2iu2ja6Qr"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen=""
-                  ></iframe>
-                </li>
-              </ul>
-            </li>
-          </ol>
-        </div>
+        <ol>
+          <li>
+            <strong>
+              <a href="https://www.radiumui.com">RadimUI</a>
+              <span>- A hackable ChatGPT desktop app</span>
+            </strong>
+          </li>
+          <li>
+            <strong>YouTube - Code with me</strong>
+            <ul>
+              <li>
+                <iframe
+                  width="100%"
+                  src="https://www.youtube.com/embed/kbYD2EDap3s?si=vTaAihdeADID3O_J"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen=""
+                ></iframe>
+              </li>
+              <li>
+                <iframe
+                  width="100%"
+                  src="https://www.youtube.com/embed/mRjr8Kv0owU?si=DJKuWNZ2iu2ja6Qr"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen=""
+                ></iframe>
+              </li>
+            </ul>
+          </li>
+        </ol>
       </main>
     </div>
   </body>
