@@ -1,16 +1,14 @@
 body {
-  max-width: 480px;
+  max-width: 560px;
   margin: 0 auto;
   color: rgb(56, 56, 56);
   padding: 24px 0;
+  font-size: 18px;
+  background-color: #fdfdfd;
 }
 
 a {
-  display: inline-block;
-  position: relative;
-  color: rgb(56, 56, 56);
   text-decoration: none;
-  font-style: italic;
 }
 a:hover {
   text-decoration: underline;
@@ -40,4 +38,17 @@ pre {
   font-size: 14px;
   line-height: 1.5;
   border: 1px solid #333;
+}
+
+.project-list {
+  a {
+    display: block;
+    padding: 6px 12px;
+    margin-bottom: 4px;
+  }
+  a:hover {
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+  }
 }
