@@ -13,9 +13,6 @@ class CustomHeader extends HTMLElement {
               <a href="https://github.com/fikrigha" target="_blank">
                 <small>GitHub</small>
               </a>
-              <a href="https://twitter.com/fikrigha" target="_blank">
-                <small>Twitter</small>
-              </a>
             </nav>
         </header>
     `;
