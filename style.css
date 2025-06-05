@@ -37,16 +37,3 @@ pre {
   line-height: 1.5;
   border: 1px solid #333;
 }
-
-.project-list {
-  a {
-    display: block;
-    padding: 6px 12px;
-    margin-bottom: 4px;
-  }
-  a:hover {
-    background-color: darkblue;
-    color: white;
-    text-decoration: none;
-  }
-}
