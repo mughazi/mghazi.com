@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setting up Quill text editor in NextJS</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../header-component.js"></script>
+  </head>
+
+  <body>
+    <header-component></header-component>
+
+    <hr />
+
+    <br />
+
+    <small>Thursday, June 5, 2025 - 7:45 PM</small>
+
+    <h1>Setting up Quill editor in Next.js</h1>
+
+    <p>
+      I've tried a few javascript rich text editors and I like Quill the most.
+      With my default framework being Next.js, I'd like to share how I'm setting
+      it up here. Because I found it a bit confusing to find the right
+      information on how to do it. The official Quill documentation is nice but
+      its written in vanilla JavaScript instead of TypeScript. I'm using Next.js
+      15.
+    </p>
+
+    <p>
+      Disclaimer: It might be easier for you just to use quill-react. But I like
+      using the library directly without a wrapper. That way I can use the
+      latest and greatest version.
+    </p>
+
+    <p>First, install the Quill package.</p>
+
+    <pre>npm install quill</pre>
+
+    <p>
+      Then create a new file called quill.tsx and copy/paste the following code.
+    </p>
+
+    <script src="https://gist.github.com/fikrigha/d90f04d4679c1d43400d2c57e7d10ae8.js"></script>
+
+    <p>Next create another component which imports the quill component.</p>
+    <p>I saved this inside a file called quill.editor.tsx.</p>
+    <p>
+      Note that I'm importing the component dynamically to prevent 'document not
+      found' error, and also to prevent the component from being rendered on the
+      server side.
+    </p>
+
+    <script src="https://gist.github.com/fikrigha/fe81b6b014fdd3ac47a15476f0427ff9.js"></script>
+
+    <p>
+      And that's pretty much it. You can now use the component in your page like
+      so.
+    </p>
+
+    <script src="https://gist.github.com/fikrigha/5aafa23e158ae3c2d65cbd9c6c055b7f.js"></script>
+  </body>
+</html>

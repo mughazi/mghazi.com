@@ -27,13 +27,13 @@ header {
 }
 
 pre {
-  background-color: #333333;
-  color: #d4d4d4;
-  padding: 15px;
-  border-radius: 4px;
+  padding: 2px 4px;
   overflow-x: auto;
-  font-family: "Consolas", "Courier New", monospace;
+  font-family: monospace;
   font-size: 14px;
-  line-height: 1.5;
   border: 1px solid #333;
+}
+
+.gist-file {
+  border: 1px solid #333 !important;
 }
