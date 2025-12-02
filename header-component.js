@@ -10,7 +10,7 @@ class CustomHeader extends HTMLElement {
               <a href="https://www.linkedin.com/in/fikrigha/" target="_blank">
                 <small>LinkedIn</small>
               </a>
-              <a href="https://github.com/fikrigha" target="_blank">
+              <a href="https://github.com/mughazi" target="_blank">
                 <small>GitHub</small>
               </a>
             </nav>
