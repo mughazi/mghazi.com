@@ -4,7 +4,7 @@ body {
   color: #2f2f2f;
   padding: 44px 24px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.5;
   background-color: #fff;
 }
@@ -47,7 +47,7 @@ p {
 }
 
 body > h1 {
-  font-size: 1.6em;
+  font-size: 14px;
   line-height: 1.2;
   margin: 0 0 6px;
 }
