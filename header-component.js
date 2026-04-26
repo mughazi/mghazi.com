@@ -5,13 +5,21 @@ class CustomHeader extends HTMLElement {
             <a href="/"><h1>Fikri Ghazi</h1></a>
             <nav>
               <a href="mailto:fikri@mghazi.com">
-                <small>Email</small>
+                Email
               </a>
-              <a href="https://www.linkedin.com/in/fikrigha/" target="_blank">
-                <small>LinkedIn</small>
+              <a
+                href="https://www.linkedin.com/in/fikrigha/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
               </a>
-              <a href="https://github.com/mughazi" target="_blank">
-                <small>GitHub</small>
+              <a
+                href="https://github.com/mughazi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
               </a>
             </nav>
         </header>
