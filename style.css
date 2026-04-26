@@ -18,12 +18,13 @@ a:hover {
 }
 
 header {
+  font-size: inherit;
   padding-bottom: 8px;
   border-bottom: 1px solid #eee;
   margin-bottom: 24px;
 
   h1 {
-    font-size: 1em;
+    font-size: inherit;
     font-weight: 400;
     margin: 0;
   }
@@ -35,6 +36,7 @@ header {
   }
   nav a {
     color: #666;
+    font-size: inherit;
   }
 }
 
