@@ -87,6 +87,27 @@ h2 {
   height: 16px;
 }
 
+.project-link:hover {
+  text-decoration: none;
+}
+
+.work-description {
+  color: #666;
+  display: inline-block;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width 180ms ease, opacity 120ms ease;
+  vertical-align: bottom;
+}
+
+.project-link:hover .work-description,
+.project-link:focus .work-description {
+  max-width: 240px;
+  opacity: 1;
+}
+
 .blog-list {
   display: grid;
   grid-template-columns: max-content 1fr;
