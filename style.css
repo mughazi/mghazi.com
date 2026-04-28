@@ -91,6 +91,10 @@ h2 {
   text-decoration: none;
 }
 
+.project-link:hover .project-name {
+  text-decoration: underline;
+}
+
 .work-description {
   color: #666;
   display: inline-block;
@@ -106,17 +110,6 @@ h2 {
 .project-link:focus .work-description {
   max-width: 240px;
   opacity: 1;
-}
-
-.blog-list {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  column-gap: 18px;
-  row-gap: 6px;
-}
-
-.blog-list time {
-  color: #666;
 }
 
 pre {
