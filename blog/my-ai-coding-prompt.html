@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My AI coding prompt | Fikri Ghazi</title>
+    <meta name="description" content="The engineering principles from my Thezis AGENTS.md, ready to copy into your own project." />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../header-component.js"></script>
+  </head>
+  <body>
+    <header-component></header-component>
+    <h1>My AI coding prompt</h1>
+    <small><time datetime="2026-09-19">September 19, 2026</time></small>
+    <p>
+      This is the engineering prompt I use in Thezis’s AGENTS.md. It gives my
+      coding agents a few practical rules: break problems down before writing
+      code, keep functions focused, isolate side effects, and verify each piece
+      as they build. I want code that’s easy to follow and easy to change.
+      Copy the prompt below into your own AGENTS.md to use it in your project.
+    </p>
+    <div class="prompt-actions">
+      <button type="button" id="copy-prompt">Copy prompt</button>
+      <span id="copy-status" role="status" aria-live="polite"></span>
+    </div>
+    <pre class="engineering-prompt"><code id="engineering-prompt">## Engineering Methodology
+
+Apply these principles to all code you write or modify.
+
+### Core principles
+
+- **Decompose first.** Break every problem into small subproblems
+  before writing code. State the decomposition (in comments or your
+  plan) before implementing.
+- **Top-down design.** Write high-level structure first; main/entry
+  points should read like a summary of what the program does. Implement
+  the called functions afterward.
+- **One job per unit.** Each function/method does exactly one coherent
+  thing. If a function exceeds ~20 lines or needs &quot;and&quot; to describe it,
+  split it.
+- **Prefer pure functions.** Default to functions whose output depends
+  only on their inputs, with no side effects (no mutation of shared
+  state, I/O, or hidden dependencies). They&#x27;re easier to test, reason
+  about, and reuse. Push side effects (I/O, DB writes, mutation,
+  randomness, time) to the edges — a thin imperative shell calling a
+  pure core. Use impure functions where the job inherently requires it;
+  don&#x27;t force purity where it adds ceremony.
+- **Abstraction over duplication.** Build complex behavior by composing
+  small, well-named helpers. A caller should understand a function from
+  its name and signature without reading its body.
+- **Name for the &quot;what,&quot; not the &quot;how.&quot;** Names should make intent
+  obvious. Prefer clarity over brevity.
+
+### Workflow
+
+- **Plan before typing.** Outline the approach in pseudocode or a short
+  plan before implementing. Trace sample inputs by hand when logic is
+  non-trivial.
+- **Build incrementally.** Implement and verify one piece at a time.
+  Never write large blocks of untested code.
+- **Test as you go.** After each meaningful piece, confirm it works
+  before moving on.
+
+### Constraints
+
+- No function longer than ~20 lines without justification.
+- No copy-paste duplication — extract a helper instead.
+- Each module/class has a single, stated responsibility.
+- Keep side effects out of computation/business-logic functions; isolate
+  them in clearly-named functions at the boundary.</code></pre>
+    <script>
+      const button = document.getElementById("copy-prompt");
+      const prompt = document.getElementById("engineering-prompt");
+      const status = document.getElementById("copy-status");
+
+      button.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(prompt.textContent);
+          status.textContent = "Prompt copied.";
+        } catch {
+          const range = document.createRange();
+          range.selectNodeContents(prompt);
+          const selection = window.getSelection();
+          selection.removeAllRanges();
+          selection.addRange(range);
+          status.textContent = "Prompt selected. Press Ctrl+C or ⌘C to copy.";
+        }
+      });
+    </script>
+  </body>
+</html>
