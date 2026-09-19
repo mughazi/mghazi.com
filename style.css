@@ -132,14 +132,14 @@ h2 {
   max-width: 0;
   opacity: 0;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: normal;
   color: var(--ds-muted);
   font-size: var(--ds-text-body);
   transition: max-width 160ms ease, opacity 160ms ease;
 }
 .project-link:hover .work-description,
 .project-link:focus-visible .work-description {
-  max-width: 240px;
+  max-width: 100%;
   opacity: 1;
 }
 
