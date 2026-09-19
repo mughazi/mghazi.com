@@ -134,7 +134,7 @@ h2 {
   overflow: hidden;
   white-space: nowrap;
   color: var(--ds-muted);
-  font-size: var(--ds-text-meta);
+  font-size: var(--ds-text-body);
   transition: max-width 160ms ease, opacity 160ms ease;
 }
 .project-link:hover .work-description,
