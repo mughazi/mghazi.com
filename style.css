@@ -134,11 +134,23 @@ h2 {
   white-space: normal;
   color: var(--ds-muted);
   font-size: var(--ds-text-body);
-  transition: opacity 160ms ease;
 }
 .project-link:hover .work-description,
 .project-link:focus-visible .work-description {
   opacity: 1;
+}
+.work-description-character { opacity: 0; }
+.project-link:hover .work-description-character,
+.project-link:focus-visible .work-description-character {
+  opacity: 1;
+  transition: opacity 0s linear;
+  transition-delay: calc(var(--character-index) * 10ms);
+}
+@media (prefers-reduced-motion: reduce) {
+  .project-link:hover .work-description-character,
+  .project-link:focus-visible .work-description-character {
+    transition: none;
+  }
 }
 
 pre {
