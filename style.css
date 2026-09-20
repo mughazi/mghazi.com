@@ -129,17 +129,15 @@ h2 {
 .project-link:hover .project-name { text-decoration: underline; }
 .work-description {
   display: inline-block;
-  max-width: 0;
+  max-width: 100%;
   opacity: 0;
-  overflow: hidden;
   white-space: normal;
   color: var(--ds-muted);
   font-size: var(--ds-text-body);
-  transition: max-width 160ms ease, opacity 160ms ease;
+  transition: opacity 160ms ease;
 }
 .project-link:hover .work-description,
 .project-link:focus-visible .work-description {
-  max-width: 100%;
   opacity: 1;
 }
 
