@@ -198,9 +198,14 @@ pre code { font: inherit; }
 
 @media (max-width: 40rem) {
   :root { --ds-page-inset: var(--ds-space-2); --ds-page-y: var(--ds-space-4); }
-  .work-description {
-    flex-basis: 100%;
-    margin-left: var(--ds-space-3);
+}
+
+/* Descriptions are a hover enhancement, so keep them out of touch layouts. */
+@media (hover: none), (pointer: coarse) {
+  .work-description,
+  .project-link:hover .work-description,
+  .project-link:focus-visible .work-description {
+    display: none;
   }
 }
 
